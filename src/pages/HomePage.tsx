@@ -18,7 +18,7 @@ const jsonLd = {
   founder: { '@type': 'Person', name: 'Dr. Abdelrahman Mawafk Aly' },
   foundingDate: '2026',
   url: 'https://www.sterling-oakadvisory.com',
-  telephone: '+201000000000',
+  telephone: '+201000222724',
   email: 'hello@sterling-oakadvisory.com',
   address: {
     '@type': 'PostalAddress',

@@ -99,11 +99,11 @@ const Footer: FC = () => {
                 hello@sterling-oakadvisory.com
               </a>
               <a
-                href="tel:+201000000000"
+                href="tel:+201000222724"
                 className={`flex items-center gap-2 ${linkClass}`}
               >
                 <Phone className="w-4 h-4 shrink-0" />
-                +20 (100) 000-0000
+                +20 (100) 022-2724
               </a>
               <p className={`flex items-center gap-2 text-light-gray`}>
                 <MapPin className="w-4 h-4 shrink-0" />

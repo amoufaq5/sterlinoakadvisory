@@ -130,11 +130,11 @@ export default function ContactPage() {
                   hello@sterling-oakadvisory.com
                 </a>
                 <a
-                  href="tel:+201000000000"
+                  href="tel:+201000222724"
                   className="flex items-center gap-3 text-mid font-body hover:text-oak transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 text-oak" />
-                  +20 (100) 000-0000
+                  +20 (100) 022-2724
                 </a>
               </div>
 
@@ -239,7 +239,7 @@ export default function ContactPage() {
                       id="phone"
                       type="tel"
                       className={inputClasses}
-                      placeholder="+20 (100) 000-0000"
+                      placeholder="+20 (100) 022-2724"
                       {...register('phone')}
                     />
                   </div>
