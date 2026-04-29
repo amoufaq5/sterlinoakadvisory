@@ -182,7 +182,7 @@ export default function InsightArticlePage() {
   const { slug } = useParams<{ slug: string }>()
   const article = articles.find((a) => a.slug === slug)
   const relatedArticles = articles.filter((a) => a.slug !== slug)
-  const seo = useSEO({ title: article?.title ?? 'Article Not Found' })
+  const seo = useSEO({ title: article?.title ?? 'Article Not Found', path: '/insights/' + slug })
 
   if (!article) {
     return (

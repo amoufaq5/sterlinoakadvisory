@@ -5,35 +5,38 @@ export interface SEOProps {
   title?: string
   description?: string
   ogImage?: string
+  path?: string
 }
 
-const DEFAULT_DESCRIPTION =
-  'Sterling Oak Advisory \u2014 bespoke financial and general counsel for corporations, sovereigns, and family offices across Egypt, the Gulf, and Europe. Cairo \u00b7 London \u00b7 Dubai \u00b7 Riyadh.'
+const SITE_URL = 'https://www.sterling-oakadvisory.com'
 
-/**
- * Returns a Helmet element to render in the component tree for SEO.
- * Usage: const seo = useSEO({ title: 'About' }); return <>{seo}<div>...</div></>
- */
-export function useSEO({ title, description, ogImage }: SEOProps = {}): ReactElement {
+const DEFAULT_DESCRIPTION =
+  'Sterling Oak Advisory — bespoke financial and general counsel for corporations, sovereigns, and family offices across Egypt, the Gulf, and Europe. Cairo · London · Dubai · Riyadh.'
+
+export function useSEO({ title, description, ogImage, path }: SEOProps = {}): ReactElement {
   const pageTitle = title
     ? `${title} | Sterling Oak Advisory`
     : 'Sterling Oak Advisory'
   const pageDescription = description || DEFAULT_DESCRIPTION
+  const canonicalUrl = path ? `${SITE_URL}${path}` : undefined
 
-  const metaTags = [
-    { name: 'description', content: pageDescription },
-    { property: 'og:title', content: pageTitle },
-    { property: 'og:description', content: pageDescription },
-    { property: 'og:type', content: 'website' },
-    { name: 'twitter:card', content: 'summary_large_image' },
+  const children: ReactElement[] = [
+    createElement('title', { key: 'title' }, pageTitle),
+    createElement('meta', { key: 'desc', name: 'description', content: pageDescription }),
+    createElement('meta', { key: 'og:title', property: 'og:title', content: pageTitle }),
+    createElement('meta', { key: 'og:desc', property: 'og:description', content: pageDescription }),
+    createElement('meta', { key: 'og:type', property: 'og:type', content: 'website' }),
+    createElement('meta', { key: 'og:url', property: 'og:url', content: canonicalUrl || SITE_URL }),
+    createElement('meta', { key: 'twitter', name: 'twitter:card', content: 'summary_large_image' }),
   ]
 
   if (ogImage) {
-    metaTags.push({ property: 'og:image', content: ogImage } as any)
+    children.push(createElement('meta', { key: 'og:image', property: 'og:image', content: ogImage }))
   }
 
-  return createElement(Helmet, null,
-    createElement('title', null, pageTitle),
-    ...metaTags.map((attrs, i) => createElement('meta', { ...attrs, key: i }))
-  )
+  if (canonicalUrl) {
+    children.push(createElement('link', { key: 'canonical', rel: 'canonical', href: canonicalUrl }))
+  }
+
+  return createElement(Helmet, null, ...children)
 }

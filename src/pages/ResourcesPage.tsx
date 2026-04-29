@@ -42,7 +42,7 @@ const resources: Resource[] = [
 ]
 
 export default function ResourcesPage() {
-  const seo = useSEO({ title: 'Client Resources' })
+  const seo = useSEO({ title: 'Client Resources', path: '/resources' })
   const [showModal, setShowModal] = useState(false)
   const [selectedResource, setSelectedResource] = useState<Resource | null>(null)
 

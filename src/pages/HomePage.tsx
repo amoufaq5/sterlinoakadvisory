@@ -31,6 +31,7 @@ const jsonLd = {
 
 const HomePage: FC = () => {
   const seo = useSEO({
+    path: '/',
     description:
       'Sterling Oak Advisory \u2014 bespoke financial and general counsel for corporations, sovereigns, and family offices across Egypt, the Gulf, and Europe. Cairo \u00b7 London \u00b7 Dubai \u00b7 Riyadh.',
   })

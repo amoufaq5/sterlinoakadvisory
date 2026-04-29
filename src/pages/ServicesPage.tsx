@@ -6,7 +6,7 @@ import ScrollReveal from '../components/ui/ScrollReveal'
 import { services } from '../data/services'
 
 const ServicesPage: FC = () => {
-  const seo = useSEO({ title: 'Our Services' })
+  const seo = useSEO({ title: 'Our Services', path: '/services' })
 
   return (
     <>

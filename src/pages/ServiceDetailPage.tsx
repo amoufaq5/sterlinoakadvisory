@@ -14,7 +14,7 @@ const ServiceDetailPage: FC = () => {
   const { slug } = useParams<{ slug: string }>()
   const service = services.find((s) => s.slug === slug)
 
-  const seo = useSEO({ title: service?.title ?? 'Service Not Found' })
+  const seo = useSEO({ title: service?.title ?? 'Service Not Found', path: '/services/' + slug })
 
   if (!service) {
     return (

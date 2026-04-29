@@ -54,7 +54,7 @@ const articles: Article[] = [
 const filterTabs = ['All', 'Financial Advisory', 'M&A', 'Wealth', 'Government']
 
 const InsightsPage: FC = () => {
-  const seo = useSEO({ title: 'Insights' })
+  const seo = useSEO({ title: 'Insights', path: '/insights' })
   const [activeFilter, setActiveFilter] = useState('All')
 
   const filteredArticles =

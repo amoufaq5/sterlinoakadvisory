@@ -43,7 +43,7 @@ const serviceOptions = [
 const referralOptions = ['Referral', 'Online Search', 'LinkedIn', 'Event', 'Other']
 
 export default function ContactPage() {
-  const seo = useSEO({ title: 'Contact' })
+  const seo = useSEO({ title: 'Contact', path: '/contact' })
   const [submitState, setSubmitState] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [submitError, setSubmitError] = useState('')
   const [submittedName, setSubmittedName] = useState('')
