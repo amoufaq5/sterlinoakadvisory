@@ -76,4 +76,52 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       'The programme was successfully procured and launched within eighteen months of Sterling Oak\u2019s engagement \u2014 overcoming a two-year prior stall. Three major technology contracts were awarded through a transparent, defensible process that withstood public audit scrutiny. The digitalisation programme is now operational, serving over twelve million beneficiaries. Claims processing times have been reduced by 60%, and the authority estimates annual savings of $50M from reduced fraud and administrative efficiency. The procurement framework we developed has since been adopted as a reference model for other national digitalisation initiatives.',
   },
+  {
+    id: 'sovereign-debt-restructuring',
+    slug: 'sovereign-debt-restructuring',
+    sector: 'Financial Services',
+    title: 'Sovereign-Linked Corporate Debt Restructuring',
+    description:
+      'Advised a major Egyptian financial services group on restructuring $320M in FX-denominated debt following the 2024-2025 currency devaluation cycle.',
+    result: '$320M',
+    resultLabel: 'Debt Successfully Restructured',
+    challenge:
+      'A leading Egyptian financial services conglomerate faced an existential crisis as the Egyptian pound devaluation doubled their effective USD-denominated debt burden. Multiple creditor groups spanning four countries held conflicting claims, and the company risked covenant breaches on $320M in outstanding obligations. Previous restructuring attempts by a Big 4 firm had stalled due to creditor distrust.',
+    approach:
+      'Sterling Oak was appointed as independent restructuring advisor, trusted by both the company and its creditor committee. Our team conducted a forensic analysis of the group\'s 23 operating entities, identifying non-core assets worth $85M that could be divested without operational impact. We designed a three-tranche restructuring that converted $120M of short-term debt to 7-year facilities, negotiated a 40% haircut on accrued interest penalties, and structured an EGP-indexed repayment mechanism that aligned with the company\'s domestic revenue streams.',
+    outcome:
+      'The restructuring was completed in 9 months \u2014 half the industry average for transactions of this complexity. The company avoided insolvency, preserved 4,200 jobs, and returned to profitability within 18 months. The creditor recovery rate of 94 cents on the dollar significantly exceeded the 60-70 cent average for comparable MENA restructurings.',
+  },
+  {
+    id: 'tech-ipo-advisory',
+    slug: 'tech-ipo-advisory',
+    sector: 'Technology',
+    title: 'Technology Company IPO on Tadawul',
+    description:
+      'Guided a Saudi fintech company from pre-IPO readiness through successful listing on the Saudi Exchange (Tadawul), achieving a $1.2B valuation.',
+    result: '$1.2B',
+    resultLabel: 'IPO Valuation Achieved',
+    challenge:
+      'A rapidly growing Saudi fintech company with $180M in annual revenue sought a Tadawul listing but lacked the corporate governance infrastructure, audited financials to CMA standards, and investor relations capabilities required for a successful IPO. Two previous IPO attempts with other advisors had been abandoned due to regulatory pushback on governance deficiencies.',
+    approach:
+      'Sterling Oak conducted a comprehensive 12-month IPO readiness programme. We restructured the board to include three independent directors with public company experience, implemented IFRS-compliant financial reporting across all business lines, designed a dual-class share structure to protect founder control while satisfying CMA requirements, and built an investor marketing strategy targeting both Saudi institutional investors and qualified foreign buyers. Our capital markets team ran a competitive bookrunner selection process, ultimately appointing two lead managers.',
+    outcome:
+      'The company listed successfully with 4.2x oversubscription, pricing at the top of the indicative range. The $1.2B valuation represented a 30% premium to the initial target. Post-listing share price performance has exceeded the Tadawul All Share Index by 18% in the first six months. The governance transformation also unlocked a strategic partnership with a major European bank.',
+  },
+  {
+    id: 'family-office-esg-integration',
+    slug: 'family-office-esg-integration',
+    sector: 'Private Wealth',
+    title: 'ESG Integration for Gulf Family Office',
+    description:
+      'Designed and implemented a comprehensive ESG framework for a $2.5B Gulf family office, aligning the portfolio with UN PRI principles while maintaining return targets.',
+    result: '$2.5B',
+    resultLabel: 'Portfolio ESG-Aligned',
+    challenge:
+      'A prominent Gulf family office managing $2.5B across real estate, private equity, and public markets faced mounting pressure from next-generation family members and European co-investment partners to adopt ESG principles. However, the family patriarch was concerned that ESG constraints would reduce returns, and the portfolio included significant hydrocarbon and industrial assets that would face scrutiny under any ESG framework.',
+    approach:
+      'Sterling Oak developed a bespoke ESG integration framework that respected the family\'s values and commercial objectives. Rather than applying blanket exclusions, we conducted materiality assessments for each asset class and designed a transition pathway that allowed gradual portfolio realignment over 36 months. For hydrocarbon assets, we structured carbon offset and energy transition commitments. We created an ESG scoring methodology tailored to MENA market conditions and trained the family office investment team on ESG due diligence for new investments.',
+    outcome:
+      'The family office achieved UN PRI signatory status within 18 months. The ESG-aligned portfolio has outperformed its benchmark by 2.3% annually, disproving the assumption that ESG constraints reduce returns. The framework has been adopted by two other family offices in the region, and the family\'s next generation has taken active governance roles \u2014 strengthening succession planning as an unexpected benefit.',
+  },
 ]

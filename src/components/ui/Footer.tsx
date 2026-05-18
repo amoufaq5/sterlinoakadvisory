@@ -32,7 +32,7 @@ const serviceLinks = [
 ];
 
 const companyLinks = [
-  { label: 'About', to: '/#about' },
+  { label: 'About', to: '/about' },
   { label: 'Case Studies', to: '/case-studies' },
   { label: 'Insights', to: '/insights' },
   { label: 'Resources', to: '/resources' },
