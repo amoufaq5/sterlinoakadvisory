@@ -37,6 +37,7 @@ const companyLinks = [
   { label: 'Insights', to: '/insights' },
   { label: 'Resources', to: '/resources' },
   { label: 'Contact', to: '/contact' },
+  { label: 'Accreditations', to: '/accreditations' },
 ];
 
 const columnHeading = 'font-body uppercase tracking-widest text-xs text-oak mb-6';

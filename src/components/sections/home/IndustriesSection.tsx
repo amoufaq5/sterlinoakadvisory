@@ -15,6 +15,8 @@ const industries = [
   'Energy & Infrastructure',
   'Retail & Consumer',
   'Sovereign Wealth',
+  'ESG & Sustainability',
+  'Restructuring & Turnaround',
 ];
 
 const IndustriesSection: FC = () => {

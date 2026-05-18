@@ -11,6 +11,10 @@ const items = [
   'Market Entry',
   'Capital Advisory',
   'Digitalisation Advisory',
+  'ESG Advisory',
+  'Debt Restructuring',
+  'Capital Raising',
+  'Digital Transformation',
 ];
 
 const MarqueeSection: FC = () => {

@@ -17,6 +17,36 @@ interface Article {
 
 const articles: Article[] = [
   {
+    slug: 'esg-advisory-mena-imperative',
+    title: 'ESG in MENA: From Compliance Burden to Competitive Advantage',
+    date: 'April 2, 2026',
+    category: 'ESG',
+    excerpt:
+      'How forward-thinking companies in Egypt and the Gulf are turning ESG frameworks into genuine business value \u2014 and what the laggards risk losing.',
+    author: 'Sterling Oak Advisory Research',
+    readTime: '7 min read',
+  },
+  {
+    slug: 'corporate-debt-restructuring-egypt',
+    title: 'Navigating Corporate Debt Restructuring in Post-Devaluation Egypt',
+    date: 'March 28, 2026',
+    category: 'Restructuring',
+    excerpt:
+      'A practical framework for Egyptian corporates managing FX-denominated debt exposure in the wake of currency liberalisation and IMF reform.',
+    author: 'Dr. Abdelrahman Mawafk Aly, CFA',
+    readTime: '9 min read',
+  },
+  {
+    slug: 'ipo-readiness-mena-2026',
+    title: 'IPO Readiness: What MENA Companies Get Wrong Before Going Public',
+    date: 'March 20, 2026',
+    category: 'Capital Markets',
+    excerpt:
+      'From governance gaps to financial model weaknesses \u2014 the most common pitfalls we see in pre-IPO companies across Egypt, Saudi Arabia, and the UAE.',
+    author: 'Dr. Abdelrahman Mawafk Aly, CFA',
+    readTime: '8 min read',
+  },
+  {
     slug: 'independent-financial-counsel',
     title:
       'The Case for Independent Financial Counsel in Uncertain Markets',
@@ -51,7 +81,7 @@ const articles: Article[] = [
   },
 ]
 
-const filterTabs = ['All', 'Financial Advisory', 'M&A', 'Wealth', 'Government']
+const filterTabs = ['All', 'Financial Advisory', 'M&A', 'Wealth', 'Government', 'ESG', 'Restructuring', 'Capital Markets']
 
 const InsightsPage: FC = () => {
   const seo = useSEO({ title: 'Insights', path: '/insights' })

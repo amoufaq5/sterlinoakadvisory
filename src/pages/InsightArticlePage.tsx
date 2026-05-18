@@ -8,6 +8,36 @@ import ScrollReveal from '../components/ui/ScrollReveal'
 
 const articles = [
   {
+    slug: 'esg-advisory-mena-imperative',
+    title: 'ESG in MENA: From Compliance Burden to Competitive Advantage',
+    date: 'April 2, 2026',
+    category: 'ESG',
+    author: 'Sterling Oak Advisory Research',
+    authorInitials: 'SOA',
+    authorRole: 'Research Team, Sterling Oak Advisory',
+    readTime: '7 min read',
+  },
+  {
+    slug: 'corporate-debt-restructuring-egypt',
+    title: 'Navigating Corporate Debt Restructuring in Post-Devaluation Egypt',
+    date: 'March 28, 2026',
+    category: 'Restructuring',
+    author: 'Dr. Abdelrahman Mawafk Aly, CFA',
+    authorInitials: 'AMA',
+    authorRole: 'Founder & CEO, Sterling Oak Advisory',
+    readTime: '9 min read',
+  },
+  {
+    slug: 'ipo-readiness-mena-2026',
+    title: 'IPO Readiness: What MENA Companies Get Wrong Before Going Public',
+    date: 'March 20, 2026',
+    category: 'Capital Markets',
+    author: 'Dr. Abdelrahman Mawafk Aly, CFA',
+    authorInitials: 'AMA',
+    authorRole: 'Founder & CEO, Sterling Oak Advisory',
+    readTime: '8 min read',
+  },
+  {
     slug: 'independent-financial-counsel',
     title: 'The Case for Independent Financial Counsel in Uncertain Markets',
     date: 'March 15, 2026',
@@ -40,6 +70,165 @@ const articles = [
 ]
 
 function ArticleContent({ slug }: { slug: string }) {
+  if (slug === 'esg-advisory-mena-imperative') {
+    return (
+      <div className="prose">
+        <p>
+          For much of the past decade, Environmental, Social, and Governance (ESG) frameworks were viewed across the Middle East and North Africa as a Western import — a compliance burden imposed by international investors and multilateral lenders with limited relevance to the region's commercial realities. That perception is changing rapidly, and the companies that fail to recognise the shift risk losing access to the very capital and partnerships that will define the next era of growth.
+        </p>
+        <h2>The Regional Catalyst: Vision 2030, COP28, and Regulatory Momentum</h2>
+        <p>
+          Saudi Arabia's Vision 2030 has embedded sustainability at the heart of the Kingdom's economic transformation. From the Saudi Green Initiative's target of reaching net-zero emissions by 2060 to the integration of ESG criteria into the Public Investment Fund's investment decisions, the message from the region's largest economy is unambiguous: sustainability is not peripheral to development strategy — it is central to it.
+        </p>
+        <p>
+          The UAE's hosting of COP28 in late 2023 further accelerated regulatory momentum across the Gulf. The Abu Dhabi Securities Exchange and Dubai Financial Market have both introduced enhanced ESG disclosure requirements, and the UAE Sustainable Finance Framework is driving institutional alignment with international standards. For companies listed or seeking to list on regional exchanges, ESG reporting is rapidly moving from voluntary to mandatory.
+        </p>
+        <p>
+          Egypt, too, has made significant strides. The Financial Regulatory Authority's mandatory governance and sustainability disclosure requirements for listed companies, combined with Egypt's pioneering green bond issuance in the sovereign space, signal a regulatory environment that increasingly rewards ESG leadership. The Egyptian Exchange's own sustainability index has created a visible benchmark for corporate performance on environmental and social metrics.
+        </p>
+        <h2>ESG as M&A Due Diligence Standard</h2>
+        <p>
+          Perhaps the most tangible evidence of ESG's commercial relevance in MENA is its integration into mergers and acquisitions due diligence. International acquirers — and increasingly regional ones — now routinely include ESG assessments in their evaluation of potential targets. Companies with poor environmental records, weak governance structures, or unresolved social liabilities face valuation discounts, deal delays, or outright walk-aways.
+        </p>
+        <p>
+          In our advisory work on cross-border transactions, we have observed a marked increase in ESG-related deal issues over the past three years. Labour practices in supply chains, environmental compliance in industrial operations, and board governance quality are no longer footnotes in due diligence reports — they are headline findings that directly influence transaction pricing and structure. For sellers, this means that ESG preparedness is not just about compliance; it is about enterprise value.
+        </p>
+        <h2>The Risk of Inaction</h2>
+        <p>
+          Companies that dismiss ESG as irrelevant to their markets face a compounding set of risks. International institutional investors, who represent an increasingly important source of capital for MENA companies, have embedded ESG screens into their investment processes. A company that cannot demonstrate credible ESG practices will find itself excluded from the investment universe of precisely those investors it needs to attract for growth capital, IPOs, or strategic partnerships.
+        </p>
+        <p>
+          The cost of capital is also shifting. Green and sustainability-linked financing instruments offer measurable pricing advantages to companies that meet ESG criteria. In a region where many corporates face elevated borrowing costs due to macroeconomic conditions, the differential between conventional and sustainable financing can be material.
+        </p>
+        <h2>Practical Steps: From Aspiration to Implementation</h2>
+        <p>
+          Turning ESG from a compliance exercise into a source of competitive advantage requires a structured approach. The starting point is a rigorous materiality assessment — identifying which ESG factors are genuinely material to the company's industry, geography, and stakeholder base. Not every ESG issue is equally relevant to every company, and spreading resources too thinly across immaterial topics is a common and costly mistake.
+        </p>
+        <p>
+          Governance integration is the second critical step. ESG cannot be the sole responsibility of a sustainability officer or communications team. It must be integrated into board-level oversight, embedded in risk management frameworks, and reflected in executive compensation structures. Without governance integration, ESG initiatives remain superficial and fragile.
+        </p>
+        <p>
+          The choice of reporting framework — GRI, SASB, or the emerging ISSB standards — should be guided by the company's primary stakeholders. Companies seeking international capital should align with ISSB, which is rapidly becoming the global baseline. Those focused on broader stakeholder communication may prefer GRI's comprehensive approach. The key is consistency and credibility, not the framework itself.
+        </p>
+        <h2>Sterling Oak's Independent Approach</h2>
+        <p>
+          As an independent advisory firm, Sterling Oak Advisory brings an unbiased perspective to ESG strategy. Unlike ESG consultancies affiliated with rating agencies or investment banks, we have no proprietary ESG products to sell and no ratings to protect. Our role is to help clients develop ESG strategies that create genuine business value — strategies that withstand investor scrutiny, support capital market access, and strengthen competitive positioning in a region where sustainability is no longer optional.
+        </p>
+      </div>
+    )
+  }
+
+  if (slug === 'corporate-debt-restructuring-egypt') {
+    return (
+      <div className="prose">
+        <p>
+          The liberalisation of Egypt's exchange rate regime has fundamentally altered the financial landscape for corporates carrying foreign currency-denominated debt. For companies that borrowed in US dollars or euros when the Egyptian pound traded at significantly stronger levels, the devaluation has created a debt burden that, in local currency terms, has multiplied by a factor of two or three. This is not a theoretical problem — it is an existential challenge for hundreds of Egyptian corporates, and it demands a structured, disciplined approach to resolution.
+        </p>
+        <h2>The Scale of the Problem</h2>
+        <p>
+          Prior to the devaluation cycle that began in earnest in 2022, many Egyptian companies accessed international debt markets or borrowed from local banks in foreign currency at rates that appeared attractive relative to Egyptian pound borrowing costs. The logic was sound at the time: lower interest rates on FX-denominated debt more than compensated for perceived currency risk, particularly given years of relative stability in the EGP/USD exchange rate.
+        </p>
+        <p>
+          The subsequent devaluation has exposed the fallacy of this calculation with brutal clarity. A company that borrowed $50 million when the pound traded at 15.7 to the dollar now faces a debt burden equivalent to roughly EGP 2.4 billion at current rates — compared to the EGP 785 million it represented at inception. The interest burden has multiplied in lockstep. For companies generating revenue primarily in Egyptian pounds, the mismatch between earnings and obligations has become, in many cases, unsustainable.
+        </p>
+        <h2>IMF Reform Programme Implications</h2>
+        <p>
+          The IMF's Extended Fund Facility arrangement with Egypt, while essential for macroeconomic stabilisation, has introduced additional complexity for corporate borrowers. The programme's emphasis on exchange rate flexibility means that companies can no longer rely on a managed float to contain currency risk. Structural reforms in subsidy removal, tax policy, and state-owned enterprise governance are reshaping the operating environment in ways that affect corporate cash flows and refinancing prospects.
+        </p>
+        <p>
+          For companies in restructuring, the IMF programme is both a challenge and an opportunity. The challenge lies in the uncertainty it creates around future exchange rate movements and monetary policy. The opportunity lies in the credibility it lends to Egypt's reform trajectory, which can facilitate engagement with international creditors who might otherwise be reluctant to negotiate.
+        </p>
+        <h2>A Practical Framework for Restructuring</h2>
+        <p>
+          Drawing on our experience advising corporates through complex debt situations, we have developed a five-stage framework for navigating FX-denominated debt restructuring in the current Egyptian environment.
+        </p>
+        <p>
+          <strong>Stage 1: Cash Flow Assessment Under the New FX Reality.</strong> The first imperative is to develop a realistic projection of the company's cash flow generation capacity under current and reasonably foreseeable exchange rate scenarios. This means stress-testing revenue assumptions, input cost structures, and working capital requirements against a range of FX outcomes. The objective is not to predict the exchange rate — it is to understand the company's capacity to service debt under plausible scenarios.
+        </p>
+        <p>
+          <strong>Stage 2: Stakeholder Mapping and Creditor Classification.</strong> Restructuring is fundamentally a negotiation, and successful negotiation requires a thorough understanding of every stakeholder's position, interests, and leverage. Creditors must be classified by type (bank lenders, bondholders, trade creditors, related parties), by jurisdiction (local vs. international), and by security position (secured, unsecured, subordinated). Each classification carries different rights, different negotiating dynamics, and different resolution options.
+        </p>
+        <p>
+          <strong>Stage 3: Restructuring Options Analysis.</strong> The range of restructuring options available to an Egyptian corporate includes maturity extension (deferring principal repayments to align with projected cash flow recovery), interest rate reduction or capitalisation, debt-for-equity conversion (particularly relevant where creditors see long-term value in the business), asset disposals to reduce debt levels, and refinancing with new lenders at terms that reflect the current reality. Each option carries trade-offs in terms of dilution, control, and long-term cost, and the optimal solution is typically a combination of several instruments.
+        </p>
+        <p>
+          <strong>Stage 4: Islamic Finance Alternatives.</strong> For companies with Sharia-compliant financing structures, restructuring introduces additional complexity — but also additional flexibility. Sukuk restructuring, for example, may involve modification of the underlying asset structure rather than simple financial renegotiation. Murabaha and Ijara facilities have distinct restructuring mechanics that differ from conventional loan workouts. Understanding these instruments is essential for any advisor working in the Egyptian and Gulf markets.
+        </p>
+        <p>
+          <strong>Stage 5: Independent Advisory vs. Conflicted Bank Advisors.</strong> Perhaps the most critical decision a company in distress can make is the choice of advisor. Banks that are also creditors face an inherent conflict of interest when advising on restructuring — their advice is inevitably influenced by their own exposure and recovery priorities. An independent advisor, by contrast, is aligned solely with the company's interests and can negotiate with all creditor classes from a position of objectivity.
+        </p>
+        <h2>The Path Forward</h2>
+        <p>
+          Corporate debt restructuring in post-devaluation Egypt is not merely a financial exercise — it is a strategic process that will determine which companies survive the current transition and emerge positioned for growth in the reformed economy. The companies that approach restructuring proactively, with a clear framework, realistic assumptions, and independent counsel, will be those that preserve enterprise value and stakeholder confidence. Those that delay, deny, or rely on conflicted advice face a far more difficult path.
+        </p>
+        <p>
+          At Sterling Oak Advisory, we bring to these engagements the combination of technical rigour, regional expertise, and genuine independence that complex restructuring demands. Every situation is unique, but the principles of disciplined analysis, transparent stakeholder engagement, and creative structuring are universal.
+        </p>
+      </div>
+    )
+  }
+
+  if (slug === 'ipo-readiness-mena-2026') {
+    return (
+      <div className="prose">
+        <p>
+          The MENA capital markets are entering a period of unprecedented activity. Egypt's government privatisation programme, Saudi Arabia's continued diversification of Tadawul listings, and the UAE's efforts to deepen its equity markets are creating a wave of IPO opportunities. Yet in our advisory work, we consistently encounter companies that approach the public listing process with significant — and often avoidable — gaps in their preparation. The cost of these gaps is measured not just in delayed timelines, but in lower valuations, failed offerings, and damaged reputations.
+        </p>
+        <h2>Governance Gaps: The Family Business Challenge</h2>
+        <p>
+          The most common and most damaging readiness gap we observe in MENA pre-IPO companies is governance. Many of the region's most successful businesses are family-owned enterprises that have grown to significant scale under the founder's direct management. The governance structures that served a private company well — concentrated decision-making, informal processes, minimal board oversight — become liabilities in a public market context.
+        </p>
+        <p>
+          Specifically, we see three recurring governance deficiencies. First, the absence of genuinely independent board members. Regulators across the region — the FRA in Egypt, the CMA in Saudi Arabia, the SCA in the UAE — all require independent directors, but many pre-IPO companies treat this as a box-ticking exercise, appointing personal associates of the founder rather than professionals who can exercise genuine independent judgment.
+        </p>
+        <p>
+          Second, weak or non-existent audit committee structures. A functioning audit committee is not just a regulatory requirement; it is a signal to investors that the company takes financial integrity seriously. Companies that form audit committees months before listing, rather than years, find it difficult to demonstrate a track record of effective oversight.
+        </p>
+        <p>
+          Third, inadequate related-party transaction policies. Family-owned businesses routinely engage in transactions with entities owned by the founding family. While these transactions are not inherently problematic, the absence of formal policies for their approval, pricing, and disclosure creates a significant red flag for institutional investors who have been burned by related-party abuses in emerging markets.
+        </p>
+        <h2>Financial Model Weaknesses</h2>
+        <p>
+          The second major category of IPO readiness failure is financial. Public market investors demand a level of financial transparency and sophistication that many private MENA companies have never needed to provide. The most common weaknesses include the inability to produce audited IFRS-compliant financial statements for the required historical periods, the lack of management accounting systems capable of generating timely and accurate monthly or quarterly financial data, and weak financial forecasting capabilities.
+        </p>
+        <p>
+          Institutional investors evaluating an IPO will scrutinise the company's financial model with a rigour that far exceeds anything the company has experienced from its private bankers or auditors. Revenue assumptions, margin trajectories, capital expenditure plans, and working capital dynamics must all be defensible under sustained questioning. Companies that cannot articulate the key drivers of their financial model, or that present forecasts disconnected from historical performance, will find investor appetite rapidly evaporating.
+        </p>
+        <p>
+          The remedy is not a last-minute financial model polishing exercise. It is a multi-year programme of financial infrastructure development: upgrading accounting systems, implementing IFRS-compliant reporting, building a finance team capable of investor-grade analysis, and developing a forecasting methodology that is both rigorous and transparent.
+        </p>
+        <h2>Regulatory Underestimation</h2>
+        <p>
+          Companies planning a MENA IPO frequently underestimate the regulatory complexity involved — particularly those considering listings across multiple jurisdictions. The listing requirements of the Egyptian Exchange (EGX), the Saudi Tadawul, and the Abu Dhabi Securities Exchange (ADX) differ in material respects, including minimum free float requirements, lock-up period structures, prospectus disclosure standards, and ongoing reporting obligations.
+        </p>
+        <p>
+          Companies that begin regulatory engagement too late in the process face delays that can push them past optimal market windows. We have seen listings postponed by six months or more due to regulatory issues that could have been identified and resolved earlier with proper planning. The regulatory workstream should begin no later than eighteen months before the targeted listing date, and should be led by advisors with specific experience in the relevant exchange's requirements.
+        </p>
+        <h2>Timing and Market Window Mistakes</h2>
+        <p>
+          IPO timing is part science and part art. The science involves reading market conditions — investor sentiment, comparable valuations, macroeconomic stability, and competing supply of new issues. The art involves understanding when a company's equity story is at its most compelling and when the management team is ready for the scrutiny of public ownership.
+        </p>
+        <p>
+          The most common timing mistake is rushing to market. Companies that accelerate their IPO timeline to capture a perceived market window often arrive at the roadshow unprepared — with governance gaps unresolved, financial models incomplete, and management unpractised in investor communication. The result is typically a discounted pricing, a weak aftermarket, or in the worst cases, a pulled offering. A well-prepared IPO conducted in average market conditions will consistently outperform a poorly prepared IPO conducted in a strong market.
+        </p>
+        <h2>Bookrunner Selection: Why Independent Advice Matters</h2>
+        <p>
+          The selection of bookrunners and underwriters is one of the most consequential decisions in the IPO process, yet it is often made without independent advice. Companies typically receive pitches from investment banks and select based on valuation promises, fee quotations, and existing relationships. This process is inherently flawed: banks have strong incentives to win mandates by quoting aggressive valuations they may not be able to deliver, and existing banking relationships create conflicts that can compromise execution.
+        </p>
+        <p>
+          An independent advisor can add significant value at this stage by evaluating bookrunner capabilities objectively, benchmarking fee proposals against market standards, stress-testing valuation indications, and negotiating engagement terms that protect the issuer's interests. The cost of this independent advice is trivial relative to the value at stake in a mispriced or misexecuted IPO.
+        </p>
+        <h2>The Regional Opportunity</h2>
+        <p>
+          Despite these challenges, the MENA IPO market presents extraordinary opportunity. Egypt's privatisation programme is bringing state-owned enterprises to market, creating new listed companies and deepening the exchange's sector coverage. Saudi Arabia's Tadawul continues to attract growing international investor interest, supported by MSCI inclusion and deepening liquidity. The UAE's exchanges are actively competing for listings with competitive regulatory frameworks and strong institutional investor bases.
+        </p>
+        <p>
+          For companies that approach the IPO process with the discipline, preparation, and independent advice it demands, the rewards are substantial. At Sterling Oak Advisory, we work with pre-IPO companies to identify and close readiness gaps well in advance of the listing process, ensuring that when they do come to market, they are positioned to achieve the valuation and investor reception their business merits.
+        </p>
+      </div>
+    )
+  }
+
   if (slug === 'independent-financial-counsel') {
     return (
       <div className="prose">

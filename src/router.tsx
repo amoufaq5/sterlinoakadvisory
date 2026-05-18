@@ -11,6 +11,7 @@ const CaseStudiesPage = lazy(() => import('./pages/CaseStudiesPage'))
 const CaseStudyDetailPage = lazy(() => import('./pages/CaseStudyDetailPage'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
 const ResourcesPage = lazy(() => import('./pages/ResourcesPage'))
+const AccreditationsPage = lazy(() => import('./pages/AccreditationsPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
 function LazyPage({ children }: { children: React.ReactNode }) {
@@ -41,6 +42,7 @@ export const router = createBrowserRouter([
       { path: 'case-studies/:slug', element: <LazyPage><CaseStudyDetailPage /></LazyPage> },
       { path: 'contact', element: <LazyPage><ContactPage /></LazyPage> },
       { path: 'resources', element: <LazyPage><ResourcesPage /></LazyPage> },
+      { path: 'accreditations', element: <LazyPage><AccreditationsPage /></LazyPage> },
       { path: '*', element: <LazyPage><NotFoundPage /></LazyPage> },
     ],
   },

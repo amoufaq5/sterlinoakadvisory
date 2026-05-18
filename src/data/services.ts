@@ -387,4 +387,252 @@ export const services: ServiceData[] = [
     ],
     relatedCaseStudies: ['mena-market-entry'],
   },
+  {
+    id: 'esg-advisory',
+    number: '07',
+    slug: 'esg-advisory',
+    title: 'ESG & Sustainability Advisory',
+    subtitle: 'ESG Strategy · Carbon & Climate · Sustainable Finance',
+    description:
+      'Comprehensive ESG advisory helping corporations, sovereigns, and financial institutions across MENA navigate the transition to sustainable, responsible business practices.',
+    overview: [
+      'The MENA region is undergoing a fundamental shift in how businesses, governments, and investors approach environmental, social, and governance considerations. Saudi Vision 2030 and the UAE’s COP28 legacy have accelerated ESG adoption across the Gulf, while Egypt’s national climate strategy and growing green finance market are creating new disclosure expectations for corporates and financial institutions alike.',
+      'For MENA-headquartered companies with European exposure, the EU Corporate Sustainability Reporting Directive (CSRD) introduces binding ESG disclosure obligations that extend well beyond voluntary reporting. Simultaneously, ESG due diligence is becoming a standard component of M&A transactions, and green bond and sustainable sukuk issuances are reshaping capital markets across the region.',
+      'Sterling Oak provides independent ESG counsel free from the audit conflicts that constrain Big 4 firms. We help clients develop credible ESG strategies grounded in materiality, design carbon reduction roadmaps aligned with international frameworks, and structure sustainable finance instruments that meet both Sharia compliance and green taxonomy requirements.',
+    ],
+    included: [
+      'ESG strategy development & materiality assessment',
+      'Carbon footprint measurement & reduction roadmaps',
+      'Sustainability reporting (GRI/SASB/ISSB frameworks)',
+      'ESG due diligence for M&A transactions',
+      'Green bond & sustainable sukuk advisory',
+      'ESG risk integration for investment portfolios',
+      'Regulatory compliance (EU CSRD, Saudi ESG disclosure)',
+      'Stakeholder engagement & ESG communication',
+    ],
+    clientTypes: [
+      {
+        title: 'Corporations Preparing for ESG Disclosure',
+        description:
+          'Listed and private corporations preparing for mandatory or voluntary ESG disclosure requirements across MENA and European jurisdictions, seeking to build credible sustainability strategies that withstand investor and regulatory scrutiny.',
+      },
+      {
+        title: 'Financial Institutions',
+        description:
+          'Banks, asset managers, and insurance companies integrating ESG factors into investment processes, credit risk assessment, and product development in line with regional and international sustainability standards.',
+      },
+      {
+        title: 'Government & Sovereign Entities',
+        description:
+          'Government entities and sovereign wealth funds aligning institutional mandates with national sustainability commitments, climate pledges, and international ESG benchmarks.',
+      },
+    ],
+    approach: [
+      {
+        step: '01',
+        title: 'ESG Materiality Assessment',
+        description:
+          'We conduct a rigorous materiality assessment to identify the ESG topics most relevant to the organisation’s industry, geography, and stakeholder base. This includes peer benchmarking, regulatory horizon scanning, and structured engagement with internal and external stakeholders to establish a prioritised ESG agenda.',
+      },
+      {
+        step: '02',
+        title: 'Strategy & Framework Design',
+        description:
+          'Based on the materiality findings, we design a comprehensive ESG strategy with measurable targets, governance structures, and reporting frameworks aligned with GRI, SASB, ISSB, and applicable regional standards. For sustainable finance mandates, we structure green bond or sukuk frameworks that satisfy both investor expectations and Sharia requirements.',
+      },
+      {
+        step: '03',
+        title: 'Implementation & Reporting',
+        description:
+          'We support the organisation in embedding ESG practices into operations, supply chains, and investment processes. This includes data collection and reporting systems, stakeholder communication strategies, and ongoing monitoring to ensure that ESG commitments translate into demonstrable progress and regulatory compliance.',
+      },
+    ],
+    relatedCaseStudies: ['health-insurance-digitalisation'],
+  },
+  {
+    id: 'debt-restructuring',
+    number: '08',
+    slug: 'debt-restructuring',
+    title: 'Debt Advisory & Restructuring',
+    subtitle: 'Restructuring · Creditor Negotiation · Islamic Finance',
+    description:
+      'Independent debt advisory for corporates navigating financial distress, liability management, and complex restructuring across Egypt and the Gulf.',
+    overview: [
+      'Egypt’s macroeconomic restructuring — marked by successive EGP devaluations and an expanded IMF programme — has left many corporates with unsustainable FX-denominated debt burdens. Across the Gulf, shifts in commodity prices, post-pandemic overcapacity, and tightening credit conditions have created a growing pipeline of restructuring mandates requiring independent, sophisticated advisory.',
+      'Sterling Oak provides conflict-free debt advisory to corporates, creditor groups, and financial sponsors navigating complex restructuring situations. Unlike bank-affiliated advisors who may have lending exposure or syndication conflicts, we act exclusively in our clients’ interests. Our team combines CFA-level financial discipline with deep regional experience in creditor negotiation, intercreditor dynamics, and the regulatory frameworks governing insolvency across Egypt, Saudi Arabia, and the UAE.',
+      'We bring particular expertise in Islamic finance structuring, advising on Sukuk, Murabaha, and Ijara arrangements that require restructuring within Sharia-compliant parameters. Whether the mandate involves a consensual liability management exercise or a contentious multi-creditor negotiation, we provide the analytical rigour and negotiation capability needed to achieve optimal outcomes.',
+    ],
+    included: [
+      'Corporate debt restructuring & liability management',
+      'Creditor committee advisory & negotiation',
+      'Distressed asset advisory & turnaround strategy',
+      'Refinancing & capital structure optimisation',
+      'Islamic finance structuring (Sukuk, Murabaha, Ijara)',
+      'Intercreditor agreement advisory',
+      'Cash flow forecasting & viability assessment',
+      'Cross-border insolvency coordination',
+    ],
+    clientTypes: [
+      {
+        title: 'Corporates in Financial Distress',
+        description:
+          'Corporations facing financial distress or overleveraged balance sheets, requiring independent advisory to negotiate with creditors, restructure obligations, and restore financial viability.',
+      },
+      {
+        title: 'Creditor Groups',
+        description:
+          'Creditor committees and bondholder groups seeking independent assessment of restructuring proposals, recovery analysis, and negotiation support to protect their interests in complex multi-party situations.',
+      },
+      {
+        title: 'Private Equity Sponsors',
+        description:
+          'Private equity firms and financial sponsors managing portfolio company debt challenges, including covenant breaches, refinancing risk, and distressed exits requiring structured liability solutions.',
+      },
+    ],
+    approach: [
+      {
+        step: '01',
+        title: 'Financial Assessment & Stakeholder Mapping',
+        description:
+          'We conduct a detailed assessment of the company’s financial position, debt maturity profile, covenant structure, and liquidity runway. Simultaneously, we map the full creditor landscape, identify key decision-makers, and assess the dynamics that will shape negotiation outcomes.',
+      },
+      {
+        step: '02',
+        title: 'Restructuring Strategy & Negotiation',
+        description:
+          'We develop a comprehensive restructuring strategy encompassing debt rescheduling, write-downs, debt-for-equity conversions, or new money injections as appropriate. We lead or support negotiations with creditors, prepare detailed proposals, and manage the iterative process of reaching a consensual agreement.',
+      },
+      {
+        step: '03',
+        title: 'Execution & Monitoring',
+        description:
+          'We coordinate the implementation of the agreed restructuring terms, working with legal counsel to document new arrangements and ensure regulatory compliance. Post-restructuring, we provide ongoing monitoring of financial covenants, cash flow performance, and creditor reporting to ensure the business remains on a sustainable trajectory.',
+      },
+    ],
+    relatedCaseStudies: ['pharmaceutical-acquisition'],
+  },
+  {
+    id: 'capital-raising',
+    number: '09',
+    slug: 'capital-raising',
+    title: 'Capital Raising & IPO Advisory',
+    subtitle: 'IPO · Private Placement · Equity & Debt Capital Markets',
+    description:
+      'End-to-end capital raising advisory from pre-IPO readiness through listing and beyond — across EGX, Tadawul, ADX, and international exchanges.',
+    overview: [
+      'Capital markets across the MENA region are experiencing a period of unprecedented activity. Egypt’s privatisation programme targeting $2B+ in state asset sales, Saudi Tadawul’s emergence as the region’s premier listing venue, and sustained momentum on the ADX and DFM are creating a favourable environment for both public offerings and private capital transactions.',
+      'Sterling Oak’s capital raising practice provides end-to-end advisory from pre-IPO readiness assessment through listing and beyond. We prepare companies for public market scrutiny — strengthening financial reporting, developing compelling equity stories, building financial models that withstand institutional investor diligence, and designing investor marketing strategies that generate competitive demand.',
+      'Critically, Sterling Oak does not underwrite or distribute securities, which means our advice on bookrunner selection, pricing, and allocation is entirely independent. We help clients select the right syndicate, negotiate optimal fee structures, and ensure that the capital raising process serves the company’s long-term interests rather than the short-term incentives of the underwriting banks.',
+    ],
+    included: [
+      'IPO readiness assessment & gap analysis',
+      'Financial model development & equity story',
+      'Bookrunner & underwriter selection advisory',
+      'Investor marketing strategy & roadshow preparation',
+      'Private placement structuring & execution',
+      'Dual-listing advisory (EGX, Tadawul, ADX, LSE)',
+      'Regulatory & listing requirements compliance',
+      'Post-IPO investor relations strategy',
+    ],
+    clientTypes: [
+      {
+        title: 'State-Owned Enterprises',
+        description:
+          'Government-owned companies preparing for privatisation through public offerings, requiring independent advisory on readiness, valuation, and syndicate selection to maximise proceeds and ensure transparent execution.',
+      },
+      {
+        title: 'Growth-Stage Companies',
+        description:
+          'High-growth companies seeking equity or debt capital to fund expansion, requiring sophisticated advisory on optimal capital structure, instrument selection, and investor targeting across regional and international markets.',
+      },
+      {
+        title: 'Family-Owned Businesses',
+        description:
+          'Family-owned enterprises considering public listing as a means of accessing growth capital, providing liquidity to shareholders, or enhancing corporate profile and governance standards.',
+      },
+    ],
+    approach: [
+      {
+        step: '01',
+        title: 'Readiness Assessment & Positioning',
+        description:
+          'We assess the company’s readiness for capital markets across all dimensions — financial reporting, corporate governance, management depth, and equity story. We identify gaps and develop a structured remediation plan, ensuring the company presents to investors from a position of strength.',
+      },
+      {
+        step: '02',
+        title: 'Marketing & Execution',
+        description:
+          'We develop the investor marketing strategy, prepare roadshow materials, and advise on bookrunner selection and mandate structure. During execution, we provide independent counsel on pricing, allocation, and syndicate management to ensure the client achieves optimal terms.',
+      },
+      {
+        step: '03',
+        title: 'Post-Transaction Support',
+        description:
+          'Following completion of the capital raise, we support the client in establishing investor relations capabilities, managing analyst coverage, and maintaining capital markets credibility. For IPOs, this includes guidance on post-listing disclosure obligations, earnings communication, and ongoing shareholder engagement.',
+      },
+    ],
+    relatedCaseStudies: ['pharmaceutical-acquisition', 'mena-market-entry'],
+  },
+  {
+    id: 'digital-transformation',
+    number: '10',
+    slug: 'digital-transformation',
+    title: 'Digital Transformation Advisory',
+    subtitle: 'Digital Strategy · Technology Procurement · AI & Automation',
+    description:
+      'Strategic technology advisory bridging the gap between business objectives and digital implementation — from enterprise transformation to government digitalisation mandates.',
+    overview: [
+      'The MENA region is investing over $40B annually in digital transformation, driven by national digitalisation mandates across Egypt, Saudi Arabia, and the UAE. Yet many organisations struggle to bridge the gap between ambitious technology visions and practical implementation — technology consultants often lack strategic business context, while management consultants frequently lack the technical depth to evaluate vendor claims and architecture decisions.',
+      'Sterling Oak’s digital transformation practice occupies this critical intersection. We provide strategic technology advisory that starts with business objectives and works backward to technology solutions, not the other way around. Our $400M health insurance digitalisation mandate demonstrates our ability to manage large-scale technology programmes from strategy through procurement and delivery oversight.',
+      'Our advisory covers the full digital transformation landscape: AI and automation strategy, cybersecurity governance, cloud migration, IT operating model design, and technology vendor selection. We act as an independent counterweight to technology vendors and systems integrators, ensuring that our clients’ interests are protected throughout the procurement and implementation lifecycle.',
+    ],
+    included: [
+      'Digital transformation strategy & roadmap',
+      'Technology vendor selection & procurement advisory',
+      'AI and automation strategy development',
+      'Cybersecurity governance & risk assessment',
+      'Cloud migration strategy & vendor management',
+      'IT governance framework design',
+      'Digital programme management & oversight',
+      'Data strategy & analytics capability building',
+    ],
+    clientTypes: [
+      {
+        title: 'Government Entities',
+        description:
+          'Government bodies undertaking national digitalisation programmes, requiring independent advisory on technology strategy, vendor selection, and programme governance to ensure public funds deliver intended outcomes.',
+      },
+      {
+        title: 'Corporates Modernising Infrastructure',
+        description:
+          'Corporations modernising legacy technology infrastructure, seeking strategic guidance on platform selection, migration planning, and change management to minimise business disruption and maximise return on technology investment.',
+      },
+      {
+        title: 'Financial Institutions',
+        description:
+          'Banks, insurers, and financial services firms pursuing digital banking transformation, requiring advisory on fintech partnerships, core system modernisation, and regulatory technology compliance.',
+      },
+    ],
+    approach: [
+      {
+        step: '01',
+        title: 'Digital Maturity Assessment',
+        description:
+          'We assess the organisation’s current digital maturity across technology infrastructure, data capabilities, process automation, and digital talent. This produces a clear baseline, identifies critical gaps, and benchmarks the organisation against sector peers and best practice.',
+      },
+      {
+        step: '02',
+        title: 'Strategy & Vendor Selection',
+        description:
+          'We develop a prioritised digital transformation roadmap aligned with business strategy, including build-versus-buy decisions, vendor evaluation frameworks, and investment sequencing. For major procurements, we manage the RFP process and provide independent evaluation of vendor proposals.',
+      },
+      {
+        step: '03',
+        title: 'Programme Oversight & Delivery',
+        description:
+          'We provide ongoing programme oversight to ensure that implementation stays aligned with strategic objectives, timelines, and budgets. This includes vendor performance management, risk escalation, change management support, and regular reporting to senior leadership and board stakeholders.',
+      },
+    ],
+    relatedCaseStudies: ['health-insurance-digitalisation', 'mena-market-entry'],
+  },
 ]
