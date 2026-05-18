@@ -33,9 +33,11 @@ const serviceLinks = [
 
 const companyLinks = [
   { label: 'About', to: '/about' },
+  { label: 'Industries', to: '/industries' },
   { label: 'Case Studies', to: '/case-studies' },
   { label: 'Insights', to: '/insights' },
-  { label: 'Resources', to: '/resources' },
+  { label: 'Newsroom', to: '/newsroom' },
+  { label: 'Careers', to: '/careers' },
   { label: 'Contact', to: '/contact' },
   { label: 'Accreditations', to: '/accreditations' },
 ];

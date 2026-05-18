@@ -13,6 +13,9 @@ const ContactPage = lazy(() => import('./pages/ContactPage'))
 const ResourcesPage = lazy(() => import('./pages/ResourcesPage'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const AccreditationsPage = lazy(() => import('./pages/AccreditationsPage'))
+const IndustriesPage = lazy(() => import('./pages/IndustriesPage'))
+const IndustryDetailPage = lazy(() => import('./pages/IndustryDetailPage'))
+const CareersPage = lazy(() => import('./pages/CareersPage'))
 const NewsroomPage = lazy(() => import('./pages/NewsroomPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
@@ -46,6 +49,9 @@ export const router = createBrowserRouter([
       { path: 'resources', element: <LazyPage><ResourcesPage /></LazyPage> },
       { path: 'about', element: <LazyPage><AboutPage /></LazyPage> },
       { path: 'accreditations', element: <LazyPage><AccreditationsPage /></LazyPage> },
+      { path: 'industries', element: <LazyPage><IndustriesPage /></LazyPage> },
+      { path: 'industries/:slug', element: <LazyPage><IndustryDetailPage /></LazyPage> },
+      { path: 'careers', element: <LazyPage><CareersPage /></LazyPage> },
       { path: 'newsroom', element: <LazyPage><NewsroomPage /></LazyPage> },
       { path: '*', element: <LazyPage><NotFoundPage /></LazyPage> },
     ],
