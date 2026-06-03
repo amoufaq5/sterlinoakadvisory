@@ -200,10 +200,10 @@ const Footer: FC = () => {
         <div className="mx-auto max-w-content px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-light-gray">
           <p>&copy; 2026 Sterling Oak Advisory &mdash; Cairo, Egypt</p>
           <div className="flex items-center gap-6">
-            <Link to="#" className={linkClass}>
+            <Link to="/privacy" className={linkClass}>
               Privacy Policy
             </Link>
-            <Link to="#" className={linkClass}>
+            <Link to="/terms" className={linkClass}>
               Terms of Service
             </Link>
           </div>

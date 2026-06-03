@@ -3,6 +3,8 @@ import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import NavBar from './components/ui/NavBar'
 import Footer from './components/ui/Footer'
 import BackToTop from './components/ui/BackToTop'
+import CookieConsent from './components/ui/CookieConsent'
+import RouteTracker from './components/ui/RouteTracker'
 
 export default function App() {
   const { hash } = useLocation()
@@ -26,6 +28,7 @@ export default function App() {
         <Outlet />
       </main>
       <Footer />
+      <CookieConsent />
       <BackToTop />
       <ScrollRestoration />
     </>

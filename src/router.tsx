@@ -17,6 +17,8 @@ const IndustriesPage = lazy(() => import('./pages/IndustriesPage'))
 const IndustryDetailPage = lazy(() => import('./pages/IndustryDetailPage'))
 const CareersPage = lazy(() => import('./pages/CareersPage'))
 const NewsroomPage = lazy(() => import('./pages/NewsroomPage'))
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'))
+const TermsPage = lazy(() => import('./pages/TermsPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
 function LazyPage({ children }: { children: React.ReactNode }) {
@@ -53,6 +55,8 @@ export const router = createBrowserRouter([
       { path: 'industries/:slug', element: <LazyPage><IndustryDetailPage /></LazyPage> },
       { path: 'careers', element: <LazyPage><CareersPage /></LazyPage> },
       { path: 'newsroom', element: <LazyPage><NewsroomPage /></LazyPage> },
+      { path: 'privacy', element: <LazyPage><PrivacyPolicyPage /></LazyPage> },
+      { path: 'terms', element: <LazyPage><TermsPage /></LazyPage> },
       { path: '*', element: <LazyPage><NotFoundPage /></LazyPage> },
     ],
   },
