@@ -1,7 +1,8 @@
-import { useState, useEffect, useRef, useCallback, type FC } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo, type FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { X, ArrowRight, Search } from 'lucide-react';
+import { buildSearchIndex, searchItems, type SearchItem } from '../../lib/searchIndex';
 
 /* ───────────────────────── types ───────────────────────── */
 
@@ -10,15 +11,15 @@ interface SearchOverlayProps {
   onClose: () => void;
 }
 
-interface SearchItem {
+/* ───────────────────────── quick-link data ───────────────────────── */
+
+interface QuickLink {
   label: string;
   path: string;
   category: string;
 }
 
-/* ───────────────────────── data ───────────────────────── */
-
-const searchableItems: SearchItem[] = [
+const quickLinks: QuickLink[] = [
   // Services
   { label: 'M&A Advisory', path: '/services/mergers-acquisitions', category: 'Services' },
   { label: 'Financial Advisory', path: '/services/financial-advisory', category: 'Services' },
@@ -43,7 +44,7 @@ const searchableItems: SearchItem[] = [
   { label: 'Industries', path: '/industries', category: 'Pages' },
 ];
 
-const categories = ['Services', 'Insights', 'Pages'] as const;
+const quickLinkCategories = ['Services', 'Insights', 'Pages'] as const;
 
 /* ───────────────────────── component ───────────────────────── */
 
@@ -52,6 +53,9 @@ const SearchOverlay: FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
   const prefersReduced = useReducedMotion();
+
+  /* Build the search index once */
+  const index = useMemo(() => buildSearchIndex(), []);
 
   /* Lock body scroll */
   useEffect(() => {
@@ -100,18 +104,27 @@ const SearchOverlay: FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
     onClose();
   };
 
-  /* Filter logic */
-  const trimmed = query.trim().toLowerCase();
-  const filtered = trimmed
-    ? searchableItems.filter((item) => item.label.toLowerCase().includes(trimmed))
-    : null;
+  /* Search logic */
+  const trimmed = query.trim();
+  const results = trimmed ? searchItems(trimmed, index) : [];
+  const hasQuery = trimmed.length > 0;
 
-  /* Group items by category */
+  /* Group results by category */
   const groupByCategory = (items: SearchItem[]) => {
     const grouped: Record<string, SearchItem[]> = {};
     for (const item of items) {
       if (!grouped[item.category]) grouped[item.category] = [];
       grouped[item.category].push(item);
+    }
+    return grouped;
+  };
+
+  /* Group quick links by category */
+  const groupQuickLinks = () => {
+    const grouped: Record<string, QuickLink[]> = {};
+    for (const link of quickLinks) {
+      if (!grouped[link.category]) grouped[link.category] = [];
+      grouped[link.category].push(link);
     }
     return grouped;
   };
@@ -169,27 +182,39 @@ const SearchOverlay: FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
 
             {/* Results / Quick Links */}
             <div className="mt-12">
-              {filtered !== null ? (
-                /* ─── Filtered results ─── */
-                filtered.length > 0 ? (
+              {hasQuery ? (
+                /* ─── Search results ─── */
+                results.length > 0 ? (
                   <div>
                     <p className="font-body text-xs uppercase tracking-[0.2em] text-light-gray mb-6">
-                      {filtered.length} result{filtered.length !== 1 ? 's' : ''}
+                      {results.length} result{results.length !== 1 ? 's' : ''}
                     </p>
-                    <ul className="space-y-1">
-                      {filtered.map((item) => (
-                        <ResultItem
-                          key={item.path}
-                          item={item}
-                          onSelect={handleSelect}
-                        />
-                      ))}
-                    </ul>
+                    {Object.entries(groupByCategory(results)).map(([cat, items]) => (
+                      <div key={cat} className="mb-8 last:mb-0">
+                        <h3 className="font-body text-[11px] uppercase tracking-[0.2em] text-oak mb-3">
+                          {cat}
+                        </h3>
+                        <ul className="space-y-1">
+                          {items.map((item) => (
+                            <SearchResultItem
+                              key={item.path}
+                              item={item}
+                              onSelect={handleSelect}
+                            />
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
                 ) : (
-                  <p className="font-body text-mid text-lg">
-                    No results found for &ldquo;{query}&rdquo;
-                  </p>
+                  <div className="text-center py-8">
+                    <p className="font-body text-mid text-lg mb-2">
+                      No results found for &ldquo;{query}&rdquo;
+                    </p>
+                    <p className="font-body text-light-gray text-sm">
+                      Try different keywords, or browse the quick links below.
+                    </p>
+                  </div>
                 )
               ) : (
                 /* ─── Quick Links ─── */
@@ -197,8 +222,8 @@ const SearchOverlay: FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
                   <p className="font-body text-xs uppercase tracking-[0.2em] text-light-gray mb-8">
                     Quick Links
                   </p>
-                  {categories.map((cat) => {
-                    const items = groupByCategory(searchableItems)[cat];
+                  {quickLinkCategories.map((cat) => {
+                    const items = groupQuickLinks()[cat];
                     if (!items) return null;
                     return (
                       <div key={cat} className="mb-8 last:mb-0">
@@ -206,10 +231,10 @@ const SearchOverlay: FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
                           {cat}
                         </h3>
                         <ul className="space-y-1">
-                          {items.map((item) => (
-                            <ResultItem
-                              key={item.path}
-                              item={item}
+                          {items.map((link) => (
+                            <QuickLinkItem
+                              key={link.path}
+                              link={link}
                               onSelect={handleSelect}
                             />
                           ))}
@@ -227,14 +252,19 @@ const SearchOverlay: FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
   );
 };
 
-/* ───────────────────────── sub-component ───────────────────────── */
+/* ───────────────────────── sub-components ───────────────────────── */
 
-interface ResultItemProps {
+interface SearchResultItemProps {
   item: SearchItem;
   onSelect: (path: string) => void;
 }
 
-const ResultItem: FC<ResultItemProps> = ({ item, onSelect }) => {
+const SearchResultItem: FC<SearchResultItemProps> = ({ item, onSelect }) => {
+  const truncatedDesc =
+    item.description.length > 100
+      ? item.description.substring(0, 100) + '...'
+      : item.description;
+
   return (
     <li>
       <button
@@ -242,12 +272,49 @@ const ResultItem: FC<ResultItemProps> = ({ item, onSelect }) => {
         onClick={() => onSelect(item.path)}
         className="group w-full flex items-center justify-between gap-4 px-4 py-3 text-left rounded-none transition-colors duration-200 hover:bg-cream"
       >
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-3 mb-1">
+            <span className="inline-block rounded-none border border-border text-light-gray font-body uppercase text-[9px] tracking-[0.15em] px-2 py-0.5 shrink-0">
+              {item.category}
+            </span>
+            <span className="font-body text-dark text-[15px] group-hover:text-oak transition-colors duration-200 truncate">
+              {item.title}
+            </span>
+          </div>
+          {truncatedDesc && (
+            <p className="font-body text-light-gray text-[13px] pl-0 mt-0.5 truncate">
+              {truncatedDesc}
+            </p>
+          )}
+        </div>
+        <ArrowRight
+          size={16}
+          className="text-light-gray opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 shrink-0"
+        />
+      </button>
+    </li>
+  );
+};
+
+interface QuickLinkItemProps {
+  link: QuickLink;
+  onSelect: (path: string) => void;
+}
+
+const QuickLinkItem: FC<QuickLinkItemProps> = ({ link, onSelect }) => {
+  return (
+    <li>
+      <button
+        type="button"
+        onClick={() => onSelect(link.path)}
+        className="group w-full flex items-center justify-between gap-4 px-4 py-3 text-left rounded-none transition-colors duration-200 hover:bg-cream"
+      >
         <div className="flex items-center gap-4">
           <span className="inline-block rounded-none border border-border text-light-gray font-body uppercase text-[9px] tracking-[0.15em] px-2 py-0.5 shrink-0">
-            {item.category}
+            {link.category}
           </span>
           <span className="font-body text-dark text-[15px] group-hover:text-oak transition-colors duration-200">
-            {item.label}
+            {link.label}
           </span>
         </div>
         <ArrowRight

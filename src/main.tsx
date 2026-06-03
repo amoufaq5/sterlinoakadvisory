@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async'
 import { RouterProvider } from 'react-router-dom'
 import { router } from './router'
+import { initGA } from './lib/analytics'
 
 import '@fontsource/cormorant-garamond/300.css'
 import '@fontsource/cormorant-garamond/400.css'
@@ -15,6 +16,8 @@ import '@fontsource/jost/500.css'
 
 import './styles/globals.css'
 import './styles/prose.css'
+
+initGA()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
