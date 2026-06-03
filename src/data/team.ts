@@ -17,7 +17,7 @@ export const team: TeamMember[] = [
     title: 'Founder & Chief Executive Officer',
     credentials: 'CFA, MBA, PhD',
     initials: 'AA',
-    bio: 'Over 15 years of financial advisory experience across MENA and Europe. Previously held senior roles at leading global advisory firms before founding Sterling Oak Advisory. Has led more than $2B in advisory mandates spanning M&A, corporate strategy, and wealth planning. A pioneer of genuinely independent advisory in Egypt.',
+    bio: 'Over 15 years of financial advisory experience across MENA and Europe. Previously held senior roles at leading global advisory firms before founding Sterling Oak Advisory. Has led more than $100M in advisory mandates spanning M&A, corporate strategy, and wealth planning. A pioneer of genuinely independent advisory in Egypt.',
     specializations: ['M&A Advisory', 'Corporate Strategy', 'Wealth Planning'],
     education: [
       'PhD, Financial Economics',

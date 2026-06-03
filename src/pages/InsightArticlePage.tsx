@@ -278,7 +278,7 @@ function ArticleContent({ slug }: { slug: string }) {
           The most dangerous acquisitions are those driven by opportunism rather than strategy. Before evaluating any target, you must articulate precisely why this acquisition advances your strategic position. Is it market access? Technology capability? Talent? Supply chain integration? If you cannot state the strategic rationale in a single sentence, you are not ready to acquire.
         </p>
         <p>
-          In our experience advising on the $800M pharmaceutical distribution acquisition, the strategic rationale was clear from day one: the acquirer needed distribution infrastructure across three jurisdictions to support their manufacturing expansion. Every subsequent decision — valuation, structure, negotiation — was anchored to this strategic logic.
+          In our experience advising on the $400M pharmaceutical distribution acquisition, the strategic rationale was clear from day one: the acquirer needed distribution infrastructure across three jurisdictions to support their manufacturing expansion. Every subsequent decision — valuation, structure, negotiation — was anchored to this strategic logic.
         </p>
         <h2>2. Is the Valuation Defensible?</h2>
         <p>

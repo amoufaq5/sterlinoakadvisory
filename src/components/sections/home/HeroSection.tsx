@@ -89,7 +89,7 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { target: 2, prefix: '$', suffix: 'B+', label: 'Assets Under Advisory' },
+  { target: 100, prefix: '$', suffix: 'M+', label: 'Assets Under Advisory' },
   { target: 35, suffix: '+', label: 'Engagements Delivered' },
   { target: 4, label: 'Global Offices' },
   { target: 10, label: 'Service Lines' },

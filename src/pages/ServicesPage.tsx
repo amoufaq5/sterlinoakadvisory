@@ -12,7 +12,7 @@ type ViewMode = 'grid' | 'list'
 
 const stats = [
   { value: '10', label: 'Practice Areas' },
-  { value: '$2B+', label: 'Assets Under Advisory' },
+  { value: '$100M+', label: 'Assets Under Advisory' },
   { value: '4', label: 'Global Offices' },
 ]
 

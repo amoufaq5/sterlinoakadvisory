@@ -18,15 +18,15 @@ export const caseStudies: CaseStudy[] = [
     sector: 'Pharmaceuticals / M&A',
     title: 'Acquisition of a Pharmaceutical Distributor',
     description:
-      'Lead advisor on the $800M acquisition of a pharmaceutical distribution company \u2014 managing valuation, cross-border regulatory approvals, and deal structuring across multiple jurisdictions.',
-    result: '$800M',
+      'Lead advisor on the $400M acquisition of a pharmaceutical distribution company \u2014 managing valuation, cross-border regulatory approvals, and deal structuring across multiple jurisdictions.',
+    result: '$400M',
     resultLabel: 'Transaction Value',
     challenge:
       'A leading pharmaceutical conglomerate sought to acquire one of the largest independent pharmaceutical distributors in the MENA region. The target operated across four countries, each with distinct regulatory regimes governing pharmaceutical distribution, foreign ownership, and competition. The acquirer needed to structure a transaction that would satisfy regulators in every jurisdiction while achieving a valuation acceptable to a fragmented shareholder base with divergent expectations.',
     approach:
       'Sterling Oak served as lead financial advisor, coordinating a cross-border advisory team spanning Cairo, Dubai, and London. We developed a multi-tranche acquisition structure that addressed foreign ownership restrictions in two jurisdictions while preserving operational continuity. Our team managed the valuation process using a combination of discounted cash flow analysis, precedent transactions, and market multiples \u2014 building consensus among stakeholders with a transparent, defensible methodology. We led all regulatory submissions and maintained direct engagement with competition authorities throughout the approval process.',
     outcome:
-      'The transaction closed at $800M within nine months of mandate \u2014 a timeline considered exceptional for a multi-jurisdictional pharmaceutical acquisition in the region. All regulatory approvals were secured without conditions, and the post-merger integration plan we developed enabled the combined entity to realise $45M in annual synergies within the first eighteen months of operation. The acquisition has since been cited as a landmark transaction in MENA pharmaceutical M&A.',
+      'The transaction closed at $400M within nine months of mandate \u2014 a timeline considered exceptional for a multi-jurisdictional pharmaceutical acquisition in the region. All regulatory approvals were secured without conditions, and the post-merger integration plan we developed enabled the combined entity to realise $45M in annual synergies within the first eighteen months of operation. The acquisition has since been cited as a landmark transaction in MENA pharmaceutical M&A.',
   },
   {
     id: 'multi-generational-succession',

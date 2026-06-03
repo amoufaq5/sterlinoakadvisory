@@ -4,9 +4,9 @@ import ScrollReveal from '../../ui/ScrollReveal';
 import AnimatedCounter from '../../ui/AnimatedCounter';
 
 const stats = [
-  { target: 2, prefix: '$', suffix: 'B+', label: 'Assets Under Advisory' },
+  { target: 100, prefix: '$', suffix: 'M+', label: 'Assets Under Advisory' },
   { target: 35, suffix: '+', label: 'Engagements Completed' },
-  { target: 800, prefix: '$', suffix: 'M', label: 'Largest Single Transaction' },
+  { target: 400, prefix: '$', suffix: 'M', label: 'Largest Single Transaction' },
   { target: 98, suffix: '%', label: 'Client Retention Rate' },
   { target: 7, label: 'Jurisdictions Covered' },
   { target: 4, label: 'Global Offices' },

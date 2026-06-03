@@ -20,7 +20,7 @@ export const industries: Industry[] = [
       'Post-merger integration of healthcare operations while maintaining regulatory compliance and service continuity',
     ],
     services: ['mergers-acquisitions', 'financial-advisory', 'risk-compliance'],
-    stats: { value: '$800M', label: 'Largest Healthcare Transaction' },
+    stats: { value: '$400M', label: 'Largest Healthcare Transaction' },
     caseStudySlugs: ['pharmaceutical-acquisition'],
   },
   {

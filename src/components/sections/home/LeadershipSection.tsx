@@ -7,7 +7,7 @@ import Button from '../../ui/Button';
 const credentials = [
   {
     badge: 'Pharma M&A',
-    text: 'Lead advisor on the $800M acquisition of a pharmaceutical distributor — navigating regulatory, valuation, and cross-border structuring complexities.',
+    text: 'Lead advisor on the $400M acquisition of a pharmaceutical distributor — navigating regulatory, valuation, and cross-border structuring complexities.',
   },
   {
     badge: 'Government Digitalisation',

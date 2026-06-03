@@ -9,7 +9,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'testimonial-1',
     quote:
-      "Sterling Oak's command of pharmaceutical M&A in the Egyptian and Gulf markets is unmatched. The $800M acquisition was structured with precision \u2014 every regulatory and valuation nuance was handled flawlessly.",
+      "Sterling Oak's command of pharmaceutical M&A in the Egyptian and Gulf markets is unmatched. The $400M acquisition was structured with precision \u2014 every regulatory and valuation nuance was handled flawlessly.",
     role: 'Senior Executive, Pharmaceutical Distribution Group',
     sector: 'Egypt',
   },
